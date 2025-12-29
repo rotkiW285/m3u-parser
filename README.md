@@ -1,3 +1,4 @@
+[![Build and Publish](https://github.com/rotkiW285/m3u-parser/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/rotkiW285/m3u-parser/actions/workflows/build.yml)
 # M3U Parser & Proxy
 
 A Node.js/Fastify web application designed to fetch, parse, and intelligently group M3U streams.

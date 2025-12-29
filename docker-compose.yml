@@ -1,0 +1,16 @@
+services:
+  m3u-parser:
+    build: .
+    container_name: m3u-parser
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=${PORT:-3000}
+      - CACHE_TTL=${CACHE_TTL:-600}
+      - SOURCE_URL=${SOURCE_URL}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5m"
+        max-file: "2"
